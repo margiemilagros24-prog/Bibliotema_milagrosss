@@ -1,0 +1,85 @@
+/* Fondo y fuente */
+body {
+  font-family: 'Dancing', script;
+  margin: 0;
+  background: #f8f6fc;
+  color: #4b4453;
+}
+
+/* Encabezado */
+header {
+  background: #7B68EE;
+  color: #000000;
+  padding: 25px;
+  text-align: center;
+  border-bottom: 3px solid #b7a2f3;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#searchBar {
+  margin-top: 15px;
+  padding: 12px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 20px;
+  border: 2px solid #b7a2f3;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+#searchBar:focus {
+  border-color: #9b82f3;
+  box-shadow: 0 0 10px #d5c9f8;
+}
+
+/* Lista de libros */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 25px;
+}
+
+/* Tarjeta de libro */
+.book-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(150, 120, 220, 0.15);
+  transition: transform 0.2s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(150, 120, 220, 0.25);
+}
+
+.book-card h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #7c5cf3;
+}
+
+.book-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background: #7B68EE;
+  color: #F0F8FF;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  border-top: 3px solid #b7a2f3;
+}
+
